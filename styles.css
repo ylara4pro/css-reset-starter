@@ -33,17 +33,21 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -83,6 +87,32 @@ header, main, footer{
     background-color: var(--white);
 }
 
+figure{
+    margin: 0 20px;
+    padding: 1rem ;
+}
+
+header{
+    unicode-bidi: isolate;
+}
+
+h1{
+    font-size:32px ;
+    font-weight: bold;
+    padding-top: 25px;
+
+    }
+
+h2{
+    font-size:  1.5em ;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+h3{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
 /* Shared header and footer styles */
 header, footer{
     text-align: center;
@@ -93,6 +123,7 @@ header, footer{
 nav{
     width: 50%;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 nav ul{
@@ -123,15 +154,20 @@ main > section{
     padding: 1rem 0;
 }
 
+
+
 /* Styles for the h2 & h3 tags */
 h2, h3{
     text-align: center;
+    font-weight: bold;
+
 }
 
 /* Paragraph Styles */
 p{
     max-width: 65ch;
     margin: 0.5rem auto;
+    padding: 0 1rem;
 }
 
 /* Link Styles */
@@ -191,7 +227,8 @@ fieldset{
     grid-template-columns: 0.25fr 6fr 0.25fr 6fr;
     gap: 1rem;
     margin: 1rem 0;
-    border-color: var(--red);
+    border: 2px solid var(--red);
+    padding: 0.5rem 1rem;
 }
 
 /* Code for Custom Radios - Compare to Your zyBook, I added additional code to make these match my form styles */
@@ -262,6 +299,8 @@ textarea{
     background-color: var(--coral);
     color: var(--dk-gray);
 }
+
+
 
 /* Code Styles */
 code{
